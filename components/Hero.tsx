@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 export function Hero() {
   return (
