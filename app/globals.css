@@ -43,6 +43,15 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --animate-background-position-spin: background-position-spin 3000ms infinite alternate;
+  @keyframes background-position-spin {
+    0% {
+      background-position: top center;
+    }
+    100% {
+      background-position: bottom center;
+    }
+  }
 }
 
 :root {
@@ -112,6 +121,25 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+.gradient-border-pseudo {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.gradient-border-pseudo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #9df09c66 60%, #43434366 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.4;
+  z-index: 10;
 }
 
 @layer base {
