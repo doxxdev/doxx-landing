@@ -25,7 +25,7 @@ export function Hero() {
             <section className='relative z-10 pt-12 pb-24 px-6 w-full flex flex-col md:flex-row md:items-center md:justify-between h-full font-plus-jakarta-sans'>
               <div className='flex flex-col items-start max-w-2xl'>
                 <div className='flex items-center mb-6'>
-                  <Badge className='bg-[#1B2B1B] text-green-200 text-xs font-medium px-4 py-1 rounded-full flex items-center gap-2'>
+                  <Badge className='bg-[#9DF09C]/10 text-[#9DF09C] text-xs font-medium px-5 py-2.5 border border-[#9DF09C]/30 rounded-full flex items-center gap-2'>
                     <Image
                       src='/hero/icons/radioactive-icon.png'
                       alt='Radioactive'
@@ -35,12 +35,12 @@ export function Hero() {
                     Beta Coming Soon
                   </Badge>
                 </div>
-                <h1 className='text-5xl md:text-6xl font-bold leading-tight text-white mb-4'>
+                <h1 className='text-5xl md:text-6xl font-medium` leading-tight text-white mb-4'>
                   Trade Fast.
                   <br />
                   Infini<span className='italic font-light'> Speed.</span>
                 </h1>
-                <p className='text-gray-300 text-base md:text-lg mb-8'>
+                <p className='text-[#C8C8C8] text-base md:text-lg mb-8'>
                   The Fastest Fully On-Chain DEX With CEX-Level Performance
                 </p>
                 <div className='flex gap-4'>
@@ -53,10 +53,17 @@ export function Hero() {
                   </Button>
                   <Button
                     size='lg'
-                    className='bg-green-500 hover:bg-green-600 text-white border-none shadow rounded-full'
+                    className='bg-[#9DF09C]/30 text-[#9DF09C] hover:bg-[#9DF09C]/50  border-none shadow rounded-full'
                   >
                     Register Now
-                    <span className='text-lg'>&#8594;</span>
+                    <span className='text-lg'>
+                      <Image
+                        src='/hero/icons/arrow-right.svg'
+                        alt='Arrow Right'
+                        width={7}
+                        height={16}
+                      />
+                    </span>
                   </Button>
                 </div>
               </div>
