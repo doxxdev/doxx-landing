@@ -19,7 +19,7 @@ export function Hero() {
               src='/hero/hero-bg.png'
               alt='Grid Background'
               fill
-              className='object-cover object-center pointer-events-none select-none opacity-60 rounded-2xl'
+              className='object-cover object-center pointer-events-none select-none opacity-85 rounded-2xl'
               style={{ zIndex: 0 }}
             />
             <section className='relative z-10 pt-12 pb-24 px-6 w-full flex flex-col md:flex-row md:items-center md:justify-between h-full font-plus-jakarta-sans'>
@@ -35,14 +35,24 @@ export function Hero() {
                     Beta Coming Soon
                   </Badge>
                 </div>
-                <h1 className='text-5xl md:text-6xl font-medium` leading-tight text-white mb-4'>
-                  Trade Fast.
-                  <br />
-                  Infini<span className='italic font-light'> Speed.</span>
-                </h1>
+                <div className='flex items-center gap-9 mb-4'>
+                  <Image
+                    src='/hero/3-col-line.svg'
+                    alt='3 Col Line'
+                    width={54}
+                    height={145}
+                    className='h-[90px] w-auto md:h-[145px]'
+                  />
+                  <h1 className='text-5xl md:text-6xl font-medium leading-tight text-white mb-4'>
+                    Trade Fast.
+                    <br />
+                    Infini<span className='font-playfair-display italic font-light'> Speed.</span>
+                  </h1>
+                </div>
                 <p className='text-[#C8C8C8] text-base md:text-lg mb-8'>
                   The Fastest Fully On-Chain DEX With CEX-Level Performance
                 </p>
+
                 <div className='flex gap-4'>
                   <Button
                     variant='outline'
