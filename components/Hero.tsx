@@ -22,10 +22,10 @@ export function Hero() {
               className='object-cover object-center pointer-events-none select-none opacity-85 rounded-2xl'
               style={{ zIndex: 0 }}
             />
-            <section className='relative z-10 pt-12 pb-24 px-6 w-full flex flex-col md:flex-row md:items-center md:justify-between h-full font-plus-jakarta-sans'>
+            <section className='relative z-10 pt-12 pb-24 px-12 w-full flex flex-col md:flex-row md:items-center md:justify-between h-full font-plus-jakarta-sans '>
               <div className='flex flex-col items-start max-w-2xl'>
                 <div className='flex items-center mb-6'>
-                  <Badge className='bg-[#9DF09C]/10 text-[#9DF09C] text-xs font-medium px-5 py-2.5 border border-[#9DF09C]/30 rounded-full flex items-center gap-2'>
+                  <Badge className='bg-primary/10 text-primary text-xs font-medium px-5 py-2.5 border border-primary/30 rounded-full flex items-center gap-2'>
                     <Image
                       src='/hero/icons/radioactive-icon.png'
                       alt='Radioactive'
@@ -46,10 +46,10 @@ export function Hero() {
                   <h1 className='text-5xl md:text-6xl font-medium leading-tight text-white mb-4'>
                     Trade Fast.
                     <br />
-                    Infini<span className='font-playfair-display italic font-light'> Speed.</span>
+                    Infini<span className='font-poltawski-nowy italic font-light'> Speed.</span>
                   </h1>
                 </div>
-                <p className='text-[#C8C8C8] text-base md:text-lg mb-8'>
+                <p className='text-secondary text-base md:text-lg mb-8'>
                   The Fastest Fully On-Chain DEX With CEX-Level Performance
                 </p>
 
@@ -63,7 +63,7 @@ export function Hero() {
                   </Button>
                   <Button
                     size='lg'
-                    className='bg-[#9DF09C]/30 text-[#9DF09C] hover:bg-[#9DF09C]/50  border-none shadow rounded-full'
+                    className='bg-primary/30 text-primary hover:bg-primary/50  border-none shadow rounded-full'
                   >
                     Register Now
                     <span className='text-lg'>

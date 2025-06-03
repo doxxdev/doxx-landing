@@ -4,7 +4,7 @@ import {
   Geist_Mono,
   Roboto_Mono,
   Plus_Jakarta_Sans,
-  Playfair_Display,
+  Poltawski_Nowy,
 } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
@@ -29,8 +29,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
+const poltawskiNowy = Poltawski_Nowy({
+  variable: "--font-poltawski-nowy",
   style: ["italic", "normal"],
   subsets: ["latin"],
 });
@@ -53,7 +53,7 @@ export default function RootLayout({
           ${geistMono.variable} 
           ${robotoMono.variable} 
           ${plusJakartaSans.variable} 
-          ${playfairDisplay.variable}
+          ${poltawskiNowy.variable}
           antialiased
         `}
       >
