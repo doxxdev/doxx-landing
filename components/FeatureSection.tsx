@@ -25,14 +25,16 @@ export function FeatureSection() {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           {/* Top row: 3 columns */}
           <Card className='bg-black border border-[#333] rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
-            <h3 className='text-lg text-white font-semibold mb-2'>
-              Hybrid{" "}
-              <span className='italic font-normal font-plus-jakarta-sans'>Fall-Back Engine</span>
-            </h3>
-            <p className='text-secondary text-xs mb-4'>
-              Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut. Ultricies
-              dolor diam cursus lobortis facilisis.
-            </p>
+            <div className='flex-1'>
+              <h3 className='text-lg text-white font-semibold mb-2'>
+                Hybrid{" "}
+                <span className='italic font-normal font-plus-jakarta-sans'>Fall-Back Engine</span>
+              </h3>
+              <p className='text-secondary text-xs mb-4'>
+                Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut.
+                Ultricies dolor diam cursus lobortis facilisis.
+              </p>
+            </div>
             <div className='flex-1 w-full flex items-end justify-center'>
               <Image
                 src='/features/hybrid.png'
@@ -44,14 +46,16 @@ export function FeatureSection() {
             </div>
           </Card>
           <Card className='bg-black border border-[#333] rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
-            <h3 className='text-lg text-white font-semibold mb-2'>
-              Fair-Token{" "}
-              <span className='italic font-normal font-plus-jakarta-sans'>Launchpad</span>
-            </h3>
-            <p className='text-secondary text-xs mb-4'>
-              Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut. Ultricies
-              dolor diam cursus lobortis facilisis.
-            </p>
+            <div className='flex-1'>
+              <h3 className='text-lg text-white font-semibold mb-2'>
+                Fair-Token{" "}
+                <span className='italic font-normal font-plus-jakarta-sans'>Launchpad</span>
+              </h3>
+              <p className='text-secondary text-xs mb-4'>
+                Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut.
+                Ultricies dolor diam cursus lobortis facilisis.
+              </p>
+            </div>
             <div className='flex-1 w-full flex items-end justify-center'>
               <Image
                 src='/features/launchpad.png'
@@ -63,14 +67,16 @@ export function FeatureSection() {
             </div>
           </Card>
           <Card className='bg-black border border-[#333] rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
-            <h3 className='text-lg text-white font-semibold mb-2'>
-              Vertically{" "}
-              <span className='italic font-normal font-plus-jakarta-sans'>Integrated</span>
-            </h3>
-            <p className='text-secondary text-xs mb-4'>
-              Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut. Ultricies
-              dolor diam cursus lobortis facilisis.
-            </p>
+            <div className='flex-1'>
+              <h3 className='text-lg text-white font-semibold mb-2'>
+                Vertically{" "}
+                <span className='italic font-normal font-plus-jakarta-sans'>Integrated</span>
+              </h3>
+              <p className='text-secondary text-xs mb-4'>
+                Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut.
+                Ultricies dolor diam cursus lobortis facilisis.
+              </p>
+            </div>
             <div className='flex-1 w-full flex items-end justify-center'>
               <Image
                 src='/features/vertical.png'
