@@ -69,12 +69,11 @@ export function FeatureSection() {
           <Card className='bg-black border border-[#333] rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
             <div className='flex-1'>
               <h3 className='text-lg text-white font-semibold mb-2'>
-                Vertically{" "}
-                <span className='italic font-normal font-plus-jakarta-sans'>Integrated</span>
+                No-limits <span className='italic font-normal font-plus-jakarta-sans'>Tooling</span>
               </h3>
               <p className='text-secondary text-xs mb-4'>
-                Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut.
-                Ultricies dolor diam cursus lobortis facilisis.
+                A full-stack toolbox. Granular control over execution, liquidity, and strategy. All
+                in one interface.
               </p>
             </div>
             <div className='flex-1 w-full flex items-end justify-center'>
@@ -96,8 +95,8 @@ export function FeatureSection() {
                   <span className='italic font-normal font-plus-jakarta-sans'>Trading Arena</span>
                 </h3>
                 <p className='text-secondary text-xs mb-4'>
-                  Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut.
-                  Ultricies dolor diam cursus lobortis facilisis.
+                  A fully integrated suite—asset creation, spot, leverage, and more—into one sleek
+                  interface. No tabs, no friction, just pure onchain performance.
                 </p>
               </div>
               <div className='flex-1 w-full flex items-end justify-center'>
@@ -117,8 +116,8 @@ export function FeatureSection() {
                   <span className='italic font-normal font-plus-jakarta-sans'>Performance</span>
                 </h3>
                 <p className='text-secondary text-xs mb-4'>
-                  Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut.
-                  Ultricies dolor diam cursus lobortis facilisis.
+                  Experience blazing execution on a high-throughput network, engineered for serious
+                  traders with ultra-low latency and near-zero fees.
                 </p>
               </div>
               <div className='flex-1 w-full flex items-end justify-center'>
