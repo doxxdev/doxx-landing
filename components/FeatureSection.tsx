@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 export function FeatureSection() {
   return (
-    <section className='w-full flex justify-center items-center  font-plus-jakarta-sans'>
+    <section className='w-full flex justify-center items-center  font-plus-jakarta-sans mx-5'>
       <div className='w-full max-w-[1480px] bg-black/80 rounded-2xl p-8 md:p-16 border border-[#222] shadow-lg px-12'>
         <Badge className='bg-primary/10 text-primary text-xs font-medium px-5 py-2.5 border border-primary/30 rounded-full flex items-center gap-2 mb-6'>
           <Image
