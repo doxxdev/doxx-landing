@@ -31,8 +31,8 @@ export function FeatureSection() {
                 <span className='italic font-normal font-plus-jakarta-sans'>Fall-Back Engine</span>
               </h3>
               <p className='text-secondary text-xs mb-4'>
-                Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut.
-                Ultricies dolor diam cursus lobortis facilisis.
+                No makers? No problem. DoxX vaults auto-backfill with AMM curves. Liquidity on
+                demand, day one.
               </p>
             </div>
             <div className='flex-1 w-full flex items-end justify-center'>
@@ -52,8 +52,8 @@ export function FeatureSection() {
                 <span className='italic font-normal font-plus-jakarta-sans'>Launchpad</span>
               </h3>
               <p className='text-secondary text-xs mb-4'>
-                Lorem ipsum dolor sit amet consectetur. Mi feugiat auctor egestas morbi ut.
-                Ultricies dolor diam cursus lobortis facilisis.
+                Launch any token with zero pre-mine and instant liquidity. Vaults auto-activate at
+                genesis
               </p>
             </div>
             <div className='flex-1 w-full flex items-end justify-center'>
