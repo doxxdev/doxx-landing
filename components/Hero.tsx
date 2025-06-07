@@ -7,7 +7,6 @@ import { motion } from "motion/react";
 import { Input } from "./ui/input";
 import { useState } from "react";
 import { toast } from "sonner";
-import { supabase } from "@/lib/supabase";
 
 export function Hero() {
   const [email, setEmail] = useState("");
@@ -30,7 +29,7 @@ export function Hero() {
 
       if (!response.ok) {
         if (response.status === 409) {
-          toast.custom((t) => (
+          toast.custom(() => (
             <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
               <p className='text-md font-medium'>Email already submitted</p>
             </div>
@@ -41,7 +40,7 @@ export function Hero() {
         return;
       }
 
-      toast.custom((t) => (
+      toast.custom(() => (
         <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
           <Image src='/hero/icons/arrow-right.svg' alt='Check' width={8} height={8} />
           <p className='text-md font-medium'>Email submitted</p>
@@ -51,7 +50,7 @@ export function Hero() {
       setEmail("");
     } catch (error) {
       console.error("Error:", error);
-      toast.custom((t) => (
+      toast.custom(() => (
         <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
           <p className='text-md font-medium'>Something went wrong</p>
         </div>
