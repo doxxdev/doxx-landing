@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 export function ConnectSection() {
   return (
     <section className='w-full flex justify-center items-center  font-plus-jakarta-sans mx-5'>
-      <div className='w-full max-w-[1480px] bg-black/80 rounded-2xl p-8 md:p-16 border border-[#222] shadow-lg px-12 relative overflow-hidden'>
+      <div className='w-full max-w-[1480px] bg-black/80 rounded-2xl p-8 md:p-16 border border-[#222] shadow-lg px-16 relative overflow-hidden'>
         {/* Background image */}
         <Image
           src='/footer/footer-bg.png'
@@ -15,7 +15,7 @@ export function ConnectSection() {
           className='object-cover object-center z-0 pointer-events-none select-none'
           priority
         />
-        <div className='w-full max-w-[1480px] h-[360px] p-8 md:p-16 px-12 flex flex-col md:flex-row items-center justify-between gap-8 relative z-10'>
+        <div className='w-full max-w-[1480px] h-[360px] py-8 flex flex-col md:flex-row items-center justify-between gap-8 relative z-10'>
           <div className='flex flex-col items-center md:items-start gap-2 mb-6 md:mb-0'>
             <Badge className='bg-primary/10 text-primary text-xs font-medium px-5 py-2.5 border border-primary/30 rounded-full flex items-center gap-2 mb-6'>
               <Image

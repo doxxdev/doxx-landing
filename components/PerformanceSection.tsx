@@ -4,7 +4,7 @@ import Image from "next/image";
 export function PerformanceSection() {
   return (
     <section className='w-full flex justify-center items-center  font-plus-jakarta-sans bg-white'>
-      <div className='w-full  bg-white rounded-2xl p-8 md:p-16 shadow-none px-12'>
+      <div className='w-full max-w-[1480px]  bg-white rounded-2xl p-8 shadow-none px-16'>
         <Badge className='bg- border text-green-900 border-green-900 text-xs font-medium px-5 py-2.5 rounded-full flex items-center gap-2 mb-6'>
           <Image
             src='/performance/icons/gauge.svg'

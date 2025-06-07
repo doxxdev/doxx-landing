@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 export function FeatureSection() {
   return (
     <section className='w-full flex justify-center items-center  font-plus-jakarta-sans mx-5'>
-      <div className='w-full max-w-[1480px] bg-black/80 rounded-2xl p-8 md:p-16 border border-[#222] shadow-lg px-12'>
+      <div className='w-full max-w-[1480px] bg-black/80 rounded-2xl p-8 md:p-16 border border-[#222] shadow-lg px-16'>
         <Badge className='bg-primary/10 text-primary text-xs font-medium px-5 py-2.5 border border-primary/30 rounded-full flex items-center gap-2 mb-6'>
           <Image
             src='/features/icons/kanban.svg'
@@ -115,7 +115,7 @@ export function FeatureSection() {
               />
             </div>
           </Card>
-            <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
+          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
             <div className='flex-1'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 No-limits <span className='italic font-normal font-plus-jakarta-sans'>Tooling</span>

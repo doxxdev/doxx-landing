@@ -75,12 +75,12 @@ export function Hero() {
               className='object-cover object-center pointer-events-none select-none opacity-85 rounded-2xl'
               style={{ zIndex: 0 }}
             />
-            <section className='relative z-10 pt-12 pb-24 px-12 w-full flex flex-col md:flex-row md:items-center md:justify-between h-full font-plus-jakarta-sans '>
+            <section className='relative z-10 pt-12 pb-24 px-16 w-full flex flex-col md:flex-row md:items-center md:justify-between h-full font-plus-jakarta-sans '>
               <div className='flex flex-col items-start max-w-2xl'>
                 <div className='flex items-center mb-6'>
                   <Badge className='bg-primary/10 text-primary text-xs font-medium px-5 py-2.5 border border-primary/30 rounded-full flex items-center gap-2'>
                     <Image
-                      src='/hero/icons/radioactive-icon.png'
+                      src='/hero/icons/radioactive.svg'
                       alt='Radioactive'
                       width={16}
                       height={16}
