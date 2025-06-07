@@ -8,16 +8,16 @@ export function Footer() {
         <Image src='/doxx-dark-icon.svg' alt='Logo' width={100} height={100} />
         <div className='flex gap-3 items-center'>
           {/* Docs */}
-          <a
+          {/* <a
             href='https://x.com/'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:bg-gray-100 rounded-[8px] p-2 transition-colors flex items-center justify-center'
           >
             Docs
-          </a>
+          </a> */}
           <a
-            href='https://x.com/'
+            href='https://x.com/DoxXExchange'
             target='_blank'
             rel='noopener noreferrer'
         
@@ -25,14 +25,14 @@ export function Footer() {
           >
             <Image src='/footer/icons/dark-x.svg' alt='X' width={24} height={24}  />
           </a>
-          <a
+          {/* <a
             href='https://discord.com/'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:bg-gray-100 rounded-[8px] p-2 transition-colors flex items-center justify-center'
           >
             <Image src='/footer/icons/dark-discord.svg' alt='Discord' width={24} height={24} />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

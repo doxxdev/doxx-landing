@@ -1,6 +1,7 @@
 import React from "react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 export function ConnectSection() {
   return (
@@ -35,21 +36,23 @@ export function ConnectSection() {
           </div>
           <div className='flex gap-4 items-center justify-center'>
             <a
-              href='https://x.com/'
+              href='https://x.com/DoxXExchange'
               target='_blank'
               rel='noopener noreferrer'
               className='bg-white/5 hover:bg-white/10 rounded-[8px] p-3 transition-colors flex items-center justify-center'
             >
               <Image src='/footer/icons/x.svg' alt='X' width={24} height={24} />
             </a>
-            <a
-              href='https://discord.com/'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='bg-white/5 hover:bg-white/10 rounded-[8px] p-3 transition-colors flex items-center justify-center'
+            {/* disabled */}
+            <Button
+              disabled={true}
+              // href='https://discord.com/'
+              // target='_blank'
+              // rel='noopener noreferrer'
+              className='bg-white/5 hover:bg-white/10 rounded-[8px] p-3 transition-colors flex items-center justify-center h-full'
             >
               <Image src='/footer/icons/discord.svg' alt='Discord' width={24} height={24} />
-            </a>
+            </Button>
           </div>
         </div>
       </div>
