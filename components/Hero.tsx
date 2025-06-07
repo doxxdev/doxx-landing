@@ -16,6 +16,16 @@ export function Hero() {
     e.preventDefault();
     setIsLoading(true);
 
+    if (!email) {
+      toast.custom(() => (
+        <div className='bg-[#0A0A0A] font-poltawski-nowy italic gap-2 text-[#A0A0A2] text-sm p-5 border border-white/30 shadow-[0px_0px_8px_1px_#FFFFFF]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
+          <p className='text-md font-medium'>Please enter your email</p>
+        </div>
+      ));
+      setIsLoading(false);
+      return;
+    }
+
     try {
       const response = await fetch("/api/subscribe", {
         method: "POST",
@@ -30,7 +40,7 @@ export function Hero() {
       if (!response.ok) {
         if (response.status === 409) {
           toast.custom(() => (
-            <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
+            <div className='bg-[#0A0A0A] font-poltawski-nowy italic gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
               <p className='text-md font-medium'>Email already submitted</p>
             </div>
           ));
@@ -41,8 +51,7 @@ export function Hero() {
       }
 
       toast.custom(() => (
-        <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
-          <Image src='/hero/icons/arrow-right.svg' alt='Check' width={8} height={8} />
+        <div className='bg-[#0A0A0A] font-poltawski-nowy italic gap-2 text-[#A0A0A2] text-sm p-5 border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
           <p className='text-md font-medium'>Email submitted</p>
         </div>
       ));
