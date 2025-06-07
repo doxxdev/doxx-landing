@@ -20,11 +20,60 @@ export function FeatureSection() {
           Where your edge meets the Infini-Speed.
         </h2>
         <p className='text-secondary text-base md:text-lg mb-12 max-w-2xl'>
-          Supercharge your trading experience on a high-performance network with ultra-low fees.
+          Decentralized Finance. Fully On-chain. Best in class execution.
         </p>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+          {/* Bottom row: span all 3 columns, then 2-col grid inside */}
+          <div className='col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 md:mt-0'>
+            <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-row items-start min-h-[300px]'>
+              <div className='flex-1'>
+                <h3 className='text-lg text-white font-semibold mb-2'>
+                  Full-Stack{" "}
+                  <span className='italic font-normal font-plus-jakarta-sans'>Trading Arena</span>
+                </h3>
+                <p className='text-secondary text-xs mb-4'>
+                  A fully integrated suite—asset creation, spot,
+                  <br /> leverage, and more—into one sleek interface.
+                  <br /> No tabs, no friction, just pure onchain
+                  <br /> performance.
+                </p>
+              </div>
+              <div className='flex-1 w-full flex items-end justify-center'>
+                <Image
+                  src='/features/arena.png'
+                  alt='Arena'
+                  width={344}
+                  height={300}
+                  className='object-contain'
+                />
+              </div>
+            </Card>
+            <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-row items-start min-h-[300px]'>
+              <div className='flex-1'>
+                <h3 className='text-lg text-white font-semibold mb-2'>
+                  CEX-Level{" "}
+                  <span className='italic font-normal font-plus-jakarta-sans'>Performance</span>
+                </h3>
+                <p className='text-secondary text-xs mb-4'>
+                  Experience blazing execution on a<br /> high-throughput network, engineered
+                  <br /> for serious traders with ultra-low <br />
+                  latency and near-zero fees.
+                </p>
+              </div>
+              <div className='flex-1 w-full flex items-end justify-center'>
+                <Image
+                  src='/features/cex.png'
+                  alt='CEX'
+                  width={344}
+                  height={300}
+                  className='object-contain'
+                />
+              </div>
+            </Card>
+          </div>
+
           {/* Top row: 3 columns */}
-          <Card className='bg-black border border-[#333] rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
+          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
             <div className='flex-1'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 Hybrid{" "}
@@ -45,15 +94,15 @@ export function FeatureSection() {
               />
             </div>
           </Card>
-          <Card className='bg-black border border-[#333] rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
+          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
             <div className='flex-1'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 Fair-Token{" "}
                 <span className='italic font-normal font-plus-jakarta-sans'>Launchpad</span>
               </h3>
               <p className='text-secondary text-xs mb-4'>
-                Launch any token with zero pre-mine and instant liquidity. Vaults auto-activate at
-                genesis
+                Launch any token with zero pre-mine and <br />
+                instant liquidity. Vaults auto-activate at genesis
               </p>
             </div>
             <div className='flex-1 w-full flex items-end justify-center'>
@@ -66,14 +115,14 @@ export function FeatureSection() {
               />
             </div>
           </Card>
-          <Card className='bg-black border border-[#333] rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
+            <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
             <div className='flex-1'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 No-limits <span className='italic font-normal font-plus-jakarta-sans'>Tooling</span>
               </h3>
               <p className='text-secondary text-xs mb-4'>
-                A full-stack toolbox. Granular control over execution, liquidity, and strategy. All
-                in one interface.
+                A full-stack toolbox. Granular control over
+                <br /> execution, liquidity, and strategy. All in one interface.
               </p>
             </div>
             <div className='flex-1 w-full flex items-end justify-center'>
@@ -86,51 +135,6 @@ export function FeatureSection() {
               />
             </div>
           </Card>
-          {/* Bottom row: span all 3 columns, then 2-col grid inside */}
-          <div className='col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 md:mt-0'>
-            <Card className='bg-black border border-[#333] rounded-xl p-6 flex flex-row items-start min-h-[300px]'>
-              <div className='flex-1'>
-                <h3 className='text-lg text-white font-semibold mb-2'>
-                  Full-Stack{" "}
-                  <span className='italic font-normal font-plus-jakarta-sans'>Trading Arena</span>
-                </h3>
-                <p className='text-secondary text-xs mb-4'>
-                  A fully integrated suite—asset creation, spot, leverage, and more—into one sleek
-                  interface. No tabs, no friction, just pure onchain performance.
-                </p>
-              </div>
-              <div className='flex-1 w-full flex items-end justify-center'>
-                <Image
-                  src='/features/arena.png'
-                  alt='Arena'
-                  width={344}
-                  height={300}
-                  className='object-contain'
-                />
-              </div>
-            </Card>
-            <Card className='bg-black border border-[#333] rounded-xl p-6 flex flex-row items-start min-h-[300px]'>
-              <div className='flex-1'>
-                <h3 className='text-lg text-white font-semibold mb-2'>
-                  CEX-Level{" "}
-                  <span className='italic font-normal font-plus-jakarta-sans'>Performance</span>
-                </h3>
-                <p className='text-secondary text-xs mb-4'>
-                  Experience blazing execution on a high-throughput network, engineered for serious
-                  traders with ultra-low latency and near-zero fees.
-                </p>
-              </div>
-              <div className='flex-1 w-full flex items-end justify-center'>
-                <Image
-                  src='/features/cex.png'
-                  alt='CEX'
-                  width={344}
-                  height={300}
-                  className='object-contain'
-                />
-              </div>
-            </Card>
-          </div>
         </div>
       </div>
     </section>
