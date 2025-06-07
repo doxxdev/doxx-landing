@@ -49,7 +49,6 @@ export function Hero() {
 
       setEmail("");
     } catch (error) {
-      console.error("Error:", error);
       toast.custom(() => (
         <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
           <p className='text-md font-medium'>Something went wrong</p>
