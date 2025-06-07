@@ -5,8 +5,61 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { motion } from "motion/react";
 import { Input } from "./ui/input";
+import { useState } from "react";
+import { toast } from "sonner";
+import { supabase } from "@/lib/supabase";
 
 export function Hero() {
+  const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        if (response.status === 409) {
+          toast.custom((t) => (
+            <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
+              <p className='text-md font-medium'>Email already submitted</p>
+            </div>
+          ));
+        } else {
+          throw new Error(data.error || "Something went wrong");
+        }
+        return;
+      }
+
+      toast.custom((t) => (
+        <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
+          <Image src='/hero/icons/arrow-right.svg' alt='Check' width={8} height={8} />
+          <p className='text-md font-medium'>Email submitted</p>
+        </div>
+      ));
+
+      setEmail("");
+    } catch (error) {
+      console.error("Error:", error);
+      toast.custom((t) => (
+        <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
+          <p className='text-md font-medium'>Something went wrong</p>
+        </div>
+      ));
+    } finally {
+      setIsLoading(false);
+    }
+  };
   return (
     <div className='flex justify-center items-center w-full mx-5'>
       <div className='relative w-full max-w-[1480px] overflow-hidden rounded-2xl gradient-border-pseudo'>
@@ -52,21 +105,27 @@ export function Hero() {
                   The Fastest Fully On-Chain DEX With CEX-Level Performance
                 </p>
 
-                <div className='flex gap-2 w-full'>
-                  <Input
-                    className='bg-[#282828]/50 text-[#A0A0A2]  pl-5 border-[#646464] hover:bg-[#282828]/70 rounded-xl h-[56px] w-full focus-visible:ring-0 focus-visible:ring-offset-0'
-                    placeholder='Enter your email'
-                    type='email'
-                  />
-                  <div className='flex items-center justify-center p-1 rounded-xl border border-primary/20 h-[56px] w-[102px] max-w-[300px]'>
-                    <Button
-                      size='lg'
-                      className='bg-primary text-[#141414] hover:bg-primary/90 p-5 border-none shadow rounded-lg flex items-center justify-center  w-full h-full'
-                    >
-                      Be Early
-                    </Button>
+                <form onSubmit={handleSubmit} className='w-full'>
+                  <div className='flex gap-2 w-full'>
+                    <Input
+                      className='bg-[#282828]/50 text-[#A0A0A2]  pl-5 border-[#646464] hover:bg-[#282828]/70 rounded-xl h-[56px] w-full focus-visible:ring-0 focus-visible:ring-offset-0'
+                      placeholder='Enter your email'
+                      type='email'
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <div className='flex items-center justify-center p-1 rounded-xl border border-primary/20 h-[56px] w-[102px] max-w-[300px]'>
+                      <Button
+                        size='lg'
+                        className='bg-primary text-[#141414] hover:bg-primary/90 p-5 border-none shadow rounded-lg flex items-center justify-center  w-full h-full'
+                        type='submit'
+                        disabled={isLoading}
+                      >
+                        Be Early
+                      </Button>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
               <div className='hidden md:flex flex-row items-center justify-end pr-2 min-w-[140px] gap-2 md:self-center'>
                 <span className='text-xs text-gray-400 tracking-widest uppercase'>Built on</span>
