@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { motion } from "motion/react";
+import { Input } from "./ui/input";
 
 export function Hero() {
   return (
@@ -35,46 +36,36 @@ export function Hero() {
                     Beta Coming Soon
                   </Badge>
                 </div>
-                <div className='flex items-center gap-9 mb-4'>
-                  <Image
-                    src='/hero/3-col-line.svg'
-                    alt='3 Col Line'
-                    width={54}
-                    height={145}
-                    className='h-[90px] w-auto md:h-[145px]'
-                  />
-                  <h1 className='text-5xl md:text-6xl font-medium leading-tight text-white mb-4'>
+                <div className='flex items-center gap-11 mb-4'>
+                  <Image src='/hero/3-col-line.svg' alt='3 Col Line' width={54} height={146} />
+                  <h1 className='text-[64px] md:text-6xl font-medium leading-tight text-white mb-4'>
                     Trade Fast.
                     <br />
-                    Infini<span className='font-poltawski-nowy italic font-light'> Speed.</span>
+                    Infini
+                    <span className='font-poltawski-nowy italic font-light text-[64px]'>
+                      {" "}
+                      Speed.
+                    </span>
                   </h1>
                 </div>
-                <p className='text-secondary text-base md:text-lg mb-8'>
+                <p className='text-secondary text-base font md:text-lg mb-8'>
                   The Fastest Fully On-Chain DEX With CEX-Level Performance
                 </p>
 
-                <div className='flex gap-4'>
-                  <Button
-                    variant='outline'
-                    size='lg'
-                    className='bg-white text-black border-none shadow hover:bg-gray-100 rounded-full'
-                  >
-                    Learn more
-                  </Button>
-                  <Button
-                    size='lg'
-                    className='bg-primary/30 text-primary hover:bg-primary/50  border-none shadow rounded-full'
-                  >
-                    Register Now
-                    <span className='text-lg'>
-                      <Image
-                        src='/hero/icons/arrow-right.svg'
-                        alt='Arrow Right'
-                        width={7}
-                        height={16}
-                      />
-                    </span>
-                  </Button>
+                <div className='flex gap-2 w-full'>
+                  <Input
+                    className='bg-[#282828]/50 text-[#A0A0A2]  pl-5 border-[#646464] hover:bg-[#282828]/70 rounded-xl h-[56px] w-full focus-visible:ring-0 focus-visible:ring-offset-0'
+                    placeholder='Enter your email'
+                    type='email'
+                  />
+                  <div className='flex items-center justify-center p-1 rounded-xl border border-primary/20 h-[56px] w-[102px] max-w-[300px]'>
+                    <Button
+                      size='lg'
+                      className='bg-primary text-[#141414] hover:bg-primary/90 p-5 border-none shadow rounded-lg flex items-center justify-center  w-full h-full'
+                    >
+                      Be Early
+                    </Button>
+                  </div>
                 </div>
               </div>
               <div className='hidden md:flex flex-row items-center justify-end pr-2 min-w-[140px] gap-2 md:self-center'>
