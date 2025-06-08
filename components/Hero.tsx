@@ -148,7 +148,7 @@ export function Hero() {
               </div>
             </section>
 
-            <Button className='absolute bottom-10 right-10 rounded-full bg-[#4A4A4A]  flex items-center justify-center gap-2 h-[56px] w-[56px] hover:bg-[#4A4A4A]/90 z-10'>
+            <Button className='absolute bottom-12 right-12 rounded-full bg-[#4A4A4A]  flex items-center justify-center gap-2 h-[56px] w-[56px] hover:bg-[#4A4A4A]/90 z-10'>
               <Image src='/hero/icons/thunderbolt.svg' alt='Thunderbolt' width={30} height={30} />
             </Button>
           </Card>
