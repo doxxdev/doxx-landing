@@ -38,7 +38,7 @@ export function ConnectSection() {
               <Image src='/footer/icons/x.svg' alt='X' width={24} height={24} />
             </a>
             {/* disabled */}
-            <Button
+            {/* <Button
               disabled={true}
               // href='https://discord.com/'
               // target='_blank'
@@ -46,7 +46,7 @@ export function ConnectSection() {
               className='bg-white/5 hover:bg-white/10 rounded-[8px] p-3 transition-colors flex items-center justify-center h-full'
             >
               <Image src='/footer/icons/discord.svg' alt='Discord' width={24} height={24} />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

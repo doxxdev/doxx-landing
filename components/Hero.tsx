@@ -107,11 +107,11 @@ export function Hero() {
                 </div>
                 <div className='flex items-center gap-11 mb-4'>
                   <Image src='/hero/3-col-line.svg' alt='3 Col Line' width={54} height={146} />
-                  <h1 className='text-[64px] md:text-6xl font-medium leading-tight text-white mb-4'>
+                  <h1 className='text-[50px] md:text-6xl font-medium leading-tight text-white mb-4'>
                     Trade Fast.
                     <br />
                     Infini
-                    <span className='font-poltawski-nowy italic font-light text-[64px]'>
+                    <span className='font-poltawski-nowy italic font-light text-[50px] md:text-[64px]'>
                       {" "}
                       Speed.
                     </span>
