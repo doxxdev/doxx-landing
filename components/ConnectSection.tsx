@@ -1,7 +1,6 @@
 import React from "react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
-import { Button } from "./ui/button";
 
 export function ConnectSection() {
   return (

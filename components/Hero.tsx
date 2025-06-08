@@ -7,7 +7,6 @@ import { motion } from "motion/react";
 import { Input } from "./ui/input";
 import { useState } from "react";
 import { toast } from "sonner";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export function Hero() {
   const [email, setEmail] = useState("");
