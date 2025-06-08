@@ -69,7 +69,7 @@ export function Hero() {
     }
   };
   return (
-    <div className='flex justify-center items-center w-full mx-5'>
+    <div className='flex justify-center items-center w-full px-5'>
       <div className='relative w-full max-w-[1480px] overflow-hidden rounded-2xl gradient-border-pseudo'>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -104,13 +104,13 @@ export function Hero() {
                     Beta Coming Soon
                   </Badge>
                 </div>
-                <div className='flex items-center gap-11 mb-4'>
+                <div className='flex items-center gap-11 mb-4 '>
                   <Image src='/hero/3-col-line.svg' alt='3 Col Line' width={54} height={146} />
-                  <h1 className='text-[50px] md:text-6xl font-medium leading-tight text-white mb-4'>
+                  <h1 className='text-[40px] md:text-6xl font-medium leading-tight text-white mb-4'>
                     Trade Fast.
                     <br />
                     Infini
-                    <span className='font-poltawski-nowy italic font-light text-[50px] md:text-[64px]'>
+                    <span className='font-poltawski-nowy italic font-light text-[40px] md:text-[64px]'>
                       {" "}
                       Speed.
                     </span>
@@ -123,7 +123,7 @@ export function Hero() {
                 <form onSubmit={handleSubmit} className='w-full'>
                   <div className='flex gap-2 w-full'>
                     <Input
-                      className='bg-[#282828]/50 text-[#A0A0A2]  pl-5 border-[#646464] hover:bg-[#282828]/70 rounded-xl h-[56px] w-full focus-visible:ring-0 focus-visible:ring-offset-0'
+                      className='bg-[#282828]/50 text-[#A0A0A2]  pl-4 md:pl-5 border-[#646464] hover:bg-[#282828]/70 rounded-xl h-[56px] w-full focus-visible:ring-0 focus-visible:ring-offset-0 text-sm md:text-base'
                       placeholder='Enter your email'
                       type='email'
                       value={email}

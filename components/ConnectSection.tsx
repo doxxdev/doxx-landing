@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function ConnectSection() {
   return (
-    <section className='w-full flex justify-center items-center  font-plus-jakarta-sans mx-5'>
+    <section className='w-full flex justify-center items-center  font-plus-jakarta-sans px-5'>
       <div className='w-full max-w-[1480px] bg-black/80 rounded-2xl p-8 md:p-16 border border-[#222] shadow-lg px-16 relative overflow-hidden'>
         {/* Background image */}
 
