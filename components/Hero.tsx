@@ -148,6 +148,10 @@ export function Hero() {
                 <Image src='/solayer-logo.svg' alt='Solayer Logo' width={104} height={25} />
               </div>
             </section>
+
+            <Button className='absolute bottom-10 right-10 rounded-full bg-[#4A4A4A]  flex items-center justify-center gap-2 h-[56px] w-[56px] hover:bg-[#4A4A4A]/90 z-10'>
+              <Image src='/hero/icons/thunderbolt.svg' alt='Thunderbolt' width={30} height={30} />
+            </Button>
           </Card>
         </motion.div>
       </div>
