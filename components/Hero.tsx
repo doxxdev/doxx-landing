@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import { Input } from "./ui/input";
 import { useState } from "react";
 import { toast } from "sonner";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export function Hero() {
   const [email, setEmail] = useState("");
@@ -76,15 +77,22 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <Card className='relative w-full bg-black/80 p-0 border-none shadow-lg h-[896px] min-h-[60vh] rounded-2xl overflow-hidden'>
+          <Card className=' w-full bg-linear-to-b from-[#000000] to-[#282828] p-0 border-none shadow-lg h-[896px] min-h-[60vh] rounded-2xl overflow-hidden'>
             <Image
-              src='/hero/hero-bg.png'
+              src='/hero/grid-hero.png'
               alt='Grid Background'
               fill
-              className='object-cover object-center pointer-events-none select-none opacity-85 rounded-2xl'
-              style={{ zIndex: 0 }}
+              className='object-cover object-center opacity-10 rounded-2xl'
+              style={{ zIndex: 2 }}
             />
-            <section className='relative z-10 pt-12 pb-24 px-16 w-full flex flex-col md:flex-row md:items-center md:justify-between h-full font-plus-jakarta-sans '>
+            <Image
+              src='/hero/logo-hero.png'
+              alt='Logo Hero'
+              fill
+              className='object-cover object-center pointer-events-none select-none rounded-2xl'
+              style={{ zIndex: 1 }}
+            />
+            <section className='relative z-10 pt-12 pb-24 px-16 w-full flex flex-col md:flex-row md:items-center md:justify-between h-full font-plus-jakarta-sans'>
               <div className='flex flex-col items-start max-w-2xl'>
                 <div className='flex items-center mb-6'>
                   <Badge className='bg-primary/10 text-primary text-xs font-medium px-5 py-2.5 border border-primary/30 rounded-full flex items-center gap-2'>
