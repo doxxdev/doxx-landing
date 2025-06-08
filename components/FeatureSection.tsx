@@ -20,12 +20,12 @@ export function FeatureSection() {
           Where your edge meets the Infini-Speed.
         </h2>
         <p className='text-secondary text-base md:text-lg mb-12 max-w-2xl'>
-          Decentralized Finance. Fully On-chain. Best in class execution.
+          Decentralized finance. Fully On-chain. Best in class execution.
         </p>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           {/* Bottom row: span all 3 columns, then 2-col grid inside */}
           <div className='col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 md:mt-0'>
-            <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-row items-start min-h-[300px]'>
+            <Card className='bg-black border pb-1 border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl pl-5 pr-1 flex flex-col md:flex-row items-start min-h-[300px]'>
               <div className='flex-1'>
                 <h3 className='text-lg text-white font-semibold mb-2'>
                   Full-Stack{" "}
@@ -38,17 +38,16 @@ export function FeatureSection() {
                   <br /> performance.
                 </p>
               </div>
-              <div className='flex-1 w-full flex items-end justify-center'>
+              <div className='relative w-full max-w-[344px] h-[300px]'>
                 <Image
-                  src='/features/arena.png'
-                  alt='Arena'
-                  width={344}
-                  height={300}
+                  src='/features/full-stack.png'
+                  alt='full-stack'
+                  fill
                   className='object-contain'
                 />
               </div>
             </Card>
-            <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-row items-start min-h-[300px]'>
+            <Card className='bg-black border pb-1 border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl pl-5 pr-1 flex flex-col md:flex-row items-start min-h-[300px]'>
               <div className='flex-1'>
                 <h3 className='text-lg text-white font-semibold mb-2'>
                   CEX-Level{" "}
@@ -60,12 +59,11 @@ export function FeatureSection() {
                   latency and near-zero fees.
                 </p>
               </div>
-              <div className='flex-1 w-full flex items-end justify-center'>
+              <div className='relative w-full max-w-[372px] h-[300px]'>
                 <Image
                   src='/features/cex.png'
                   alt='CEX'
-                  width={344}
-                  height={300}
+                  fill
                   className='object-contain'
                 />
               </div>
@@ -73,8 +71,8 @@ export function FeatureSection() {
           </div>
 
           {/* Top row: 3 columns */}
-          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
-            <div className='flex-1'>
+          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-1 pt-6 flex flex-col items-start min-h-[400px]'>
+            <div className='flex-1 pl-5'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 Hybrid{" "}
                 <span className='italic font-normal font-plus-jakarta-sans'>Fall-Back Engine</span>
@@ -84,18 +82,18 @@ export function FeatureSection() {
                 <br /> with AMM curves. Liquidity on demand.
               </p>
             </div>
-            <div className='flex-1 w-full flex items-end justify-center'>
+            <div className='flex-1 flex items-end justify-end'>
               <Image
                 src='/features/hybrid.png'
                 alt='Engine'
-                width={424}
+                width={426}
                 height={256}
                 className='object-contain'
               />
             </div>
           </Card>
-          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
-            <div className='flex-1'>
+          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-1 pt-6 flex flex-col items-start min-h-[400px]'>
+            <div className='flex-1 pl-5'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 Fair-Token{" "}
                 <span className='italic font-normal font-plus-jakarta-sans'>Launchpad</span>
@@ -105,18 +103,18 @@ export function FeatureSection() {
                 <br /> discovery from the very first block.
               </p>
             </div>
-            <div className='flex-1 w-full flex items-end justify-center'>
+            <div className='flex-1 flex items-end justify-end'>
               <Image
                 src='/features/launchpad.png'
                 alt='Launchpad'
-                width={424}
+                width={426}
                 height={256}
-                className='object-contain'
+                className='object-contain '
               />
             </div>
           </Card>
-          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-6 flex flex-col items-start min-h-[400px]'>
-            <div className='flex-1'>
+          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-1 pt-6 flex flex-col items-start min-h-[400px]'>
+            <div className='flex-1 pl-5'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 No-limits <span className='italic font-normal font-plus-jakarta-sans'>Tooling</span>
               </h3>
@@ -126,9 +124,9 @@ export function FeatureSection() {
                 <br /> interface.
               </p>
             </div>
-            <div className='flex-1 w-full flex items-end justify-center'>
+            <div className='flex-1 flex items-end justify-end'>
               <Image
-                src='/features/vertical.png'
+                src='/features/no-limit.png'
                 alt='Vertical'
                 width={424}
                 height={256}
