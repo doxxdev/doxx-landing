@@ -34,8 +34,8 @@ export function FeatureSection() {
                 </h3>
                 <p className='text-secondary text-xs mb-4'>
                   A fully integrated suite—asset creation, spot,
-                  <br /> leverage, and more—into one sleek interface.
-                  <br /> No tabs, no friction, just pure onchain
+                  <br /> leverage, and more into one sleek interface.
+                  <br /> No tabs, no friction, just pure on-chain
                   <br /> performance.
                 </p>
               </div>
@@ -81,8 +81,8 @@ export function FeatureSection() {
                 <span className='italic font-normal font-plus-jakarta-sans'>Fall-Back Engine</span>
               </h3>
               <p className='text-secondary text-xs mb-4'>
-                No makers? No problem. DoxX vaults auto-backfill with AMM curves. Liquidity on
-                demand, day one.
+                No makers? No problem. DoxX auto-backfill
+                <br /> with AMM curves. Liquidity on demand.
               </p>
             </div>
             <div className='flex-1 w-full flex items-end justify-center'>
@@ -102,8 +102,8 @@ export function FeatureSection() {
                 <span className='italic font-normal font-plus-jakarta-sans'>Launchpad</span>
               </h3>
               <p className='text-secondary text-xs mb-4'>
-                Launch any token with zero pre-mine and <br />
-                instant liquidity. Vaults auto-activate at genesis
+                No premine. No insiders. Just pure price
+                <br /> discovery from the very first block.
               </p>
             </div>
             <div className='flex-1 w-full flex items-end justify-center'>
@@ -123,7 +123,8 @@ export function FeatureSection() {
               </h3>
               <p className='text-secondary text-xs mb-4'>
                 A full-stack toolbox. Granular control over
-                <br /> execution, liquidity, and strategy. All in one interface.
+                <br /> execution, liquidity, and strategy. All in one
+                <br /> interface.
               </p>
             </div>
             <div className='flex-1 w-full flex items-end justify-center'>
