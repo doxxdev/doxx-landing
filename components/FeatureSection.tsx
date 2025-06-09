@@ -95,7 +95,7 @@ export function FeatureSection() {
             </div>
             <div className='flex-1 flex items-end justify-end'>
               <Image
-                src='/features/launchpad.png'
+                src='/features/launchpad-v2.png'
                 alt='Launchpad'
                 width={426}
                 height={256}
@@ -115,7 +115,7 @@ export function FeatureSection() {
             </div>
             <div className='flex-1 flex items-end justify-end'>
               <Image
-                src='/features/no-limit.png'
+                src='/features/no-limit-v2.png'
                 alt='Vertical'
                 width={424}
                 height={256}
