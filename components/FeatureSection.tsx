@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export function FeatureSection() {
   return (
@@ -25,20 +26,18 @@ export function FeatureSection() {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           {/* Bottom row: span all 3 columns, then 2-col grid inside */}
           <div className='col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 md:mt-0'>
-            <Card className='bg-black border pb-1 border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl pl-5 pr-1 flex flex-col md:flex-row items-start min-h-[300px]'>
-              <div className='flex-1'>
+            <Card className='bg-black border p-1 pt-4 border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl flex flex-col xl:flex-row min-h-[300px]'>
+              <div className='flex-1 px-3'>
                 <h3 className='text-lg text-white font-semibold mb-2'>
                   Full-Stack{" "}
                   <span className='italic font-normal font-plus-jakarta-sans'>Trading Arena</span>
                 </h3>
-                <p className='text-secondary text-xs mb-4'>
-                  A fully integrated suite—asset creation, spot,
-                  <br /> leverage, and more into one sleek interface.
-                  <br /> No tabs, no friction, just pure on-chain
-                  <br /> performance.
+                <p className='text-secondary text-xs'>
+                  A fully integrated suite—asset creation, spot, leverage, and more into one sleek
+                  interface. No tabs, no friction, just pure on-chain performance.
                 </p>
               </div>
-              <div className='relative w-full max-w-[344px] h-[300px]'>
+              <div className='relative w-full h-[180px] lg:max-w-[400px] xl:max-w-[344px] md:h-[300px]'>
                 <Image
                   src='/features/full-stack.png'
                   alt='full-stack'
@@ -47,39 +46,32 @@ export function FeatureSection() {
                 />
               </div>
             </Card>
-            <Card className='bg-black border pb-1 border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl pl-5 pr-1 flex flex-col md:flex-row items-start min-h-[300px]'>
-              <div className='flex-1'>
+            <Card className='bg-black border p-1 pt-4 border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl flex flex-col xl:flex-row min-h-[300px]'>
+              <div className='flex-1 px-3 '>
                 <h3 className='text-lg text-white font-semibold mb-2'>
                   CEX-Level{" "}
                   <span className='italic font-normal font-plus-jakarta-sans'>Performance</span>
                 </h3>
-                <p className='text-secondary text-xs mb-4'>
-                  Experience blazing execution on a<br /> high-throughput network, engineered
-                  <br /> for serious traders with ultra-low <br />
-                  latency and near-zero fees.
+                <p className='text-secondary text-xs'>
+                  Experience blazing execution on a high-throughput network, engineered for serious
+                  traders with ultra-low latency and near-zero fees.
                 </p>
               </div>
-              <div className='relative w-full max-w-[372px] h-[300px]'>
-                <Image
-                  src='/features/cex.png'
-                  alt='CEX'
-                  fill
-                  className='object-contain'
-                />
+              <div className='relative  w-full  h-[180px] md:max-w-[372px] md:h-[300px] flex items-end justify-end'>
+                <Image src='/features/cex.png' alt='CEX' fill className='object-contain' />
               </div>
             </Card>
           </div>
 
           {/* Top row: 3 columns */}
-          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-1 pt-6 flex flex-col items-start min-h-[400px]'>
-            <div className='flex-1 pl-5'>
+          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-1 pt-4 flex flex-col items-start min-h-[300px]'>
+            <div className='flex-1 px-3'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 Hybrid{" "}
                 <span className='italic font-normal font-plus-jakarta-sans'>Fall-Back Engine</span>
               </h3>
-              <p className='text-secondary text-xs mb-4'>
-                No makers? No problem. DoxX auto-backfill
-                <br /> with AMM curves. Liquidity on demand.
+              <p className='text-secondary text-xs'>
+                No makers? No problem. DoxX auto-backfill with AMM curves. Liquidity on demand.
               </p>
             </div>
             <div className='flex-1 flex items-end justify-end'>
@@ -92,15 +84,14 @@ export function FeatureSection() {
               />
             </div>
           </Card>
-          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-1 pt-6 flex flex-col items-start min-h-[400px]'>
-            <div className='flex-1 pl-5'>
+          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-1 pt-6 flex flex-col items-start min-h-[300px]'>
+            <div className='flex-1 px-3'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 Fair-Token{" "}
                 <span className='italic font-normal font-plus-jakarta-sans'>Launchpad</span>
               </h3>
-              <p className='text-secondary text-xs mb-4'>
-                No premine. No insiders. Just pure price
-                <br /> discovery from the very first block.
+              <p className='text-secondary text-xs'>
+                No premine. No insiders. Just pure price discovery from the very first block.
               </p>
             </div>
             <div className='flex-1 flex items-end justify-end'>
@@ -113,15 +104,14 @@ export function FeatureSection() {
               />
             </div>
           </Card>
-          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-1 pt-6 flex flex-col items-start min-h-[400px]'>
-            <div className='flex-1 pl-5'>
+          <Card className='bg-black border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-xl p-1 pt-6 flex flex-col items-start min-h-[300px]'>
+            <div className='flex-1 px-3'>
               <h3 className='text-lg text-white font-semibold mb-2'>
                 No-limits <span className='italic font-normal font-plus-jakarta-sans'>Tooling</span>
               </h3>
-              <p className='text-secondary text-xs mb-4'>
-                A full-stack toolbox. Granular control over
-                <br /> execution, liquidity, and strategy. All in one
-                <br /> interface.
+              <p className='text-secondary text-xs'>
+                A full-stack toolbox. Granular control over execution, liquidity, and strategy. All
+                in one interface.
               </p>
             </div>
             <div className='flex-1 flex items-end justify-end'>
