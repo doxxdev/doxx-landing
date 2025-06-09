@@ -12,7 +12,7 @@ export function ConnectSection() {
           <div className='flex flex-col items-center md:items-start gap-2 mb-6 md:mb-0'>
             <Badge className='bg-primary/10 text-primary text-xs font-medium px-5 py-2.5 border border-primary/30 rounded-full flex items-center gap-2 mb-6'>
               <Image
-                src='/features/icons/kanban.svg'
+                src='/connect/icons/connect.svg'
                 alt='Feature'
                 width={16}
                 height={16}

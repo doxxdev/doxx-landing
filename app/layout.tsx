@@ -39,7 +39,7 @@ const poltawskiNowy = Poltawski_Nowy({
 
 export const metadata: Metadata = {
   title: "Doxx",
-  description: "The Fastest Fully On-Chain DEX With CEX-Level Performance",
+  description: "Building the future of trading on infiniSVM",
 };
 
 export default function RootLayout({
