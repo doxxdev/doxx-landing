@@ -76,12 +76,12 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <Card className=' w-full bg-linear-to-b from-[#000000] to-[#282828] p-0 border-none shadow-lg h-[896px] min-h-[60vh] rounded-2xl overflow-hidden'>
+          <Card className=' w-full bg-linear-to-b from-[#000000] to-[#282828] p-0 border-none shadow-lg h-[896px] min-h-[60vh] rounded-2xl overflow-hidden relative'>
             <Image
               src='/hero/hero-bg.svg'
               alt='Grid Background'
               fill
-              className='object-cover object-center z-0'
+              className='z-0 object-center absolute object-cover opacity-50'
             />
             {/* <Image
               src='/hero/grid-hero.png'
