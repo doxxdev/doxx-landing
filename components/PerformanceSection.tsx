@@ -18,7 +18,7 @@ export function PerformanceSection() {
         <h2 className='text-3xl md:text-4xl font-semibold text-black mb-4'>
           Built for Speed & Efficiency.
         </h2>
-        <p className='text-[#4A4A4A] text-base md:text-lg mb-12 max-w-2xl'>
+        <p className='text-[#4A4A4A] text-base md:text-lg mb-12'>
           Supercharge Your Trading Experience On A High-Performance Network With Ultra-Low Fees.
         </p>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>

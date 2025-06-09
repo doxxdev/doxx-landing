@@ -78,19 +78,25 @@ export function Hero() {
         >
           <Card className=' w-full bg-linear-to-b from-[#000000] to-[#282828] p-0 border-none shadow-lg h-[896px] min-h-[60vh] rounded-2xl overflow-hidden'>
             <Image
+              src='/hero/hero-bg.svg'
+              alt='Grid Background'
+              fill
+              className='object-cover object-center z-0'
+            />
+            {/* <Image
               src='/hero/grid-hero.png'
               alt='Grid Background'
               fill
-              className='object-cover object-center opacity-10 rounded-2xl'
+              className='object-cover object-center opacity-10 '
               style={{ zIndex: 2 }}
             />
             <Image
               src='/hero/logo-hero.png'
               alt='Logo Hero'
               fill
-              className='object-cover object-center pointer-events-none select-none rounded-2xl'
+              className='object-cover object-center'
               style={{ zIndex: 1 }}
-            />
+            /> */}
             <section className='relative z-10 pt-12 pb-24 px-16 w-full flex flex-col md:flex-row md:items-center md:justify-between h-full font-plus-jakarta-sans'>
               <div className='flex flex-col items-start max-w-2xl'>
                 <div className='flex items-center mb-6'>

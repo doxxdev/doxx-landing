@@ -32,7 +32,7 @@ export function FeatureSection() {
                   <span className='italic font-normal font-plus-jakarta-sans'>Trading Arena</span>
                 </h3>
                 <p className='text-secondary text-xs'>
-                  A fully integrated suite—asset creation, spot, leverage, and more into one sleek
+                  A fully integrated suite-asset creation, spot, leverage, and more into one sleek
                   interface. No tabs, no friction, just pure on-chain performance.
                 </p>
               </div>
