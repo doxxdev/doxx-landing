@@ -107,7 +107,7 @@ export function Hero() {
                       width={16}
                       height={16}
                     />
-                    Beta Coming Soon
+                    InfiniSVM Devnet
                   </Badge>
                 </div>
                 <div className='flex items-center gap-11 mb-4 '>
@@ -126,7 +126,7 @@ export function Hero() {
                   The Fastest Fully On-Chain DEX With CEX-Level Performance
                 </p>
 
-                <form onSubmit={handleSubmit} className='w-full'>
+                {/*<form onSubmit={handleSubmit} className='w-full'>
                   <div className='flex gap-2 w-full'>
                     <Input
                       className='bg-[#282828]/50 text-[#A0A0A2]  pl-4 md:pl-5 border-[#646464] hover:bg-[#282828]/70 rounded-xl h-[56px] w-full focus-visible:ring-0 focus-visible:ring-offset-0 text-sm md:text-base'
@@ -134,19 +134,16 @@ export function Hero() {
                       type='email'
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                    />
-                    <div className='flex items-center justify-center p-1 rounded-xl border border-primary/20 h-[56px] w-[102px] max-w-[300px]'>
-                      <Button
-                        size='lg'
-                        className='bg-primary text-[#141414] hover:bg-primary/90 p-5 border-none shadow rounded-lg flex items-center justify-center  w-full h-full'
-                        type='submit'
-                        disabled={isLoading}
-                      >
-                        Be Early
-                      </Button>
-                    </div>
-                  </div>
-                </form>
+                    />*/}
+                <div className='inline-flex items-center justify-center p-1 rounded-xl border border-primary/20'>
+                  <Button
+                    size='lg'
+                    className='text-primary-foreground bg-primary/90 hover:bg-primary '
+                    onClick={() => (window.location.href = "https://devnet.doxx.exchange/")}
+                  >
+                    Get Started
+                  </Button>
+                </div>
               </div>
               <div className='hidden md:flex flex-row items-center justify-end pr-2 min-w-[140px] gap-2 md:self-center'>
                 <span className='text-xs text-gray-400 tracking-widest uppercase'>Built on</span>
