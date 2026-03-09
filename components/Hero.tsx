@@ -9,65 +9,64 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 export function Hero() {
-  const [email, setEmail] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  // const [email, setEmail] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsLoading(true);
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setIsLoading(true);
 
-    if (!email) {
-      toast.custom(() => (
-        <div className='bg-[#0A0A0A] font-poltawski-nowy italic gap-2 text-[#A0A0A2] text-sm p-5 border border-white/30 shadow-[0px_0px_8px_1px_#FFFFFF]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
-          <p className='text-md font-medium'>Please enter your email</p>
-        </div>
-      ));
-      setIsLoading(false);
-      return;
-    }
+  //   if (!email) {
+  //     toast.custom(() => (
+  //       <div className='bg-[#0A0A0A] font-poltawski-nowy italic gap-2 text-[#A0A0A2] text-sm p-5 border border-white/30 shadow-[0px_0px_8px_1px_#FFFFFF]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
+  //         <p className='text-md font-medium'>Please enter your email</p>
+  //       </div>
+  //     ));
+  //     setIsLoading(false);
+  //     return;
+  //   }
 
-    try {
-      const response = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+  //   try {
+  //     const response = await fetch("/api/subscribe", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({ email }),
+  //     });
 
-      const data = await response.json();
+  //     const data = await response.json();
 
-      if (!response.ok) {
-        if (response.status === 409) {
-          toast.custom(() => (
-            <div className='bg-[#0A0A0A] font-poltawski-nowy italic gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
-              <p className='text-md font-medium'>Email already submitted</p>
-            </div>
-          ));
-        } else {
-          throw new Error(data.error || "Something went wrong");
-        }
-        return;
-      }
+  //     if (!response.ok) {
+  //       if (response.status === 409) {
+  //         toast.custom(() => (
+  //           <div className='bg-[#0A0A0A] font-poltawski-nowy italic gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
+  //             <p className='text-md font-medium'>Email already submitted</p>
+  //           </div>
+  //         ));
+  //       } else {
+  //         throw new Error(data.error || "Something went wrong");
+  //       }
+  //       return;
+  //     }
 
-      toast.custom(() => (
-        <div className='bg-[#0A0A0A] font-poltawski-nowy italic gap-2 text-[#A0A0A2] text-sm p-5 border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
-          <p className='text-md font-medium'>Email submitted</p>
-        </div>
-      ));
+  //     toast.custom(() => (
+  //       <div className='bg-[#0A0A0A] font-poltawski-nowy italic gap-2 text-[#A0A0A2] text-sm p-5 border border-primary/10 shadow-[0px_0px_8px_1px_#CEF1D1]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
+  //         <p className='text-md font-medium'>Email submitted</p>
+  //       </div>
+  //     ));
 
-      setEmail("");
-    } catch (error) {
-      console.error("Error:", error);
-      toast.custom(() => (
-        <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
-          <p className='text-md font-medium'>Something went wrong</p>
-        </div>
-      ));
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  //     setEmail("");
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //     toast.custom(() => (
+  //       <div className='bg-[#0A0A0A] gap-2 text-[#A0A0A2] text-sm p-5 border border-[#FF1744]/30 shadow-[0px_0px_8px_1px_#FF1744]/30 rounded-md h-[68px] w-[240px] justify-center items-center flex'>
+  //         <p className='text-md font-medium'>Something went wrong</p>
+  //       </div>
+  //     ));
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
   return (
     <div className='flex justify-center items-center w-full px-5'>
       <div className='relative w-full max-w-[1480px] overflow-hidden rounded-2xl gradient-border-pseudo'>
