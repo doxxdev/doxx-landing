@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { motion } from "motion/react";
-import { Input } from "./ui/input";
-import { useState } from "react";
-import { toast } from "sonner";
+// import { Input } from "./ui/input";
+// import { useState } from "react";
+// import { toast } from "sonner";
 
 export function Hero() {
   // const [email, setEmail] = useState("");
