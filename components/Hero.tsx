@@ -137,10 +137,10 @@ export function Hero() {
                 <div className='inline-flex items-center justify-center p-1 rounded-xl border border-primary/20'>
                   <Button
                     size='lg'
-                    className='cursor-pointer text-primary-foreground bg-primary/90 hover:bg-primary '
+                    className='cursor-pointer  text-black not-odd:text-primary-foreground'
                     onClick={() => (window.location.href = "https://devnet.doxx.exchange/")}
                   >
-                    Get Started
+                    Launch App
                   </Button>
                 </div>
               </div>
